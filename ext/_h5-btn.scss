@@ -30,15 +30,26 @@ $btnBgGradientSwitch:    false !default;//是否启用渐变背景
 }
 // 定义组合按钮样式，顺序依次是背景颜色、文字颜色、字体大小、边框圆角、按钮padding, 值可以以后继续添加，可以是已经声明了的， 也可以自定义值。
 $button-extends: (
-					button-small-primary: primary #fff small false small,
-				  	button-small-danger: danger #fff small false small,
-				  	button-small-dark: dark #fff small false small,
-					button-middle-primary: primary #fff middle false middle,
-				  	button-middle-danger: danger #fff middle false middle,
-				  	button-middle-dark: dark #fff middle false middle,
-					button-big-primary: primary #fff big false big,
-				  	button-big-danger: danger #fff big false big,
-				  	button-big-dark: dark #fff big false big);
+			button-small-primary: primary #fff small false small,
+		  	button-small-danger: danger #fff small false small,
+		  	button-small-dark: dark #fff small false small,
+			button-middle-primary: primary #fff middle false middle,
+		  	button-middle-danger: danger #fff middle false middle,
+		  	button-middle-dark: dark #fff middle false middle,
+			button-big-primary: primary #fff big false big,
+		  	button-big-danger: danger #fff big false big,
+		  	button-big-dark: dark #fff big false big);
+
+$blcok-button-extends: (
+			blcok-button-small-primary: primary #fff small false small,
+		  	blcok-button-small-danger: danger #fff small false small,
+		  	blcok-button-small-dark: dark #fff small false small,
+			blcok-button-middle-primary: primary #fff middle false middle,
+		  	blcok-button-middle-danger: danger #fff middle false middle,
+		  	blcok-button-middle-dark: dark #fff middle false middle,
+			blcok-button-big-primary: primary #fff big false big,
+		  	blcok-button-big-danger: danger #fff big false big,
+		  	blcok-button-big-dark: dark #fff big false big);
 
 // 基础块级按钮样式 
 %block-btn-basic {
@@ -129,6 +140,49 @@ $button-extends: (
 		}
 	}
 }
+
+@each $name, $button-extend in $blcok-button-extends {
+	%#{$name} {
+		@extend %block-btn-basic;
+		@if type-of(nth($button-extend, 1)) == color {
+			background-color: nth($button-extend, 1);
+		} @else {
+			@extend %bg-color-#{nth($button-extend, 1)};
+		}
+
+		@if type-of(nth($button-extend, 2)) == color {
+			color: nth($button-extend, 2);
+		} @else {
+			@extend %color-#{nth($button-extend, 2)};
+		}
+		
+		@if type-of(nth($button-extend, 3)) == number {
+			font-size: nth($button-extend, 3)
+		} @else {
+			@extend %font-size-#{nth($button-extend, 3)};
+		}
+		
+		@if nth($button-extend, 4) != false {
+			@extend %border-radius-#{nth($button-extend, 4)};
+		} @else if type-of(nth($button-extend, 4)) == number{
+			-webkit-border-radius: nth($button-extend, 4);
+			-moz-border-radius: nth($button-extend, 4);
+			border-radius: nth($button-extend, 4);
+		}
+
+		@if type-of(nth($button-extend, 5)) == number {
+			padding: nth($button-extend, 5) nth($button-extend, 6);
+		} @else {
+			@extend %button-#{nth($button-extend, 5)};
+		}
+
+		//判断是否显示背景渐变		
+		@if $btnBgGradientSwitch == true {
+		  @include linear-gradient(#0894ec, darken(#0894ec, 5%));
+		}
+	}
+}
+
 // small按钮
 .button-primary {
 	@extend %button-small-primary;
@@ -160,6 +214,39 @@ $button-extends: (
 }
 .button-big-dark {
 	@extend %button-big-dark;
+}
+
+// block-small按钮
+.block-button-primary {
+	@extend %block-button-small-primary;
+}
+.block-button-danger {
+	@extend %block-button-small-danger;
+}
+.block-button-dark {
+	@extend %block-button-small-dark;
+}
+
+// block-middle按钮
+.block-button-middle-primary {
+	@extend %block-button-middle-primary;
+}
+.block-button-middle-danger {
+	@extend %block-button-middle-danger;
+}
+.block-button-middle-dark {
+	@extend %block-button-middle-dark;
+}
+
+// block-big按钮
+.block-button-big-primary {
+	@extend %block-button-big-primary;
+}
+.block-button-big-danger {
+	@extend %block-button-big-danger;
+}
+.block-button-big-dark {
+	@extend %block-button-big-dark;
 }
 
 
