@@ -22,7 +22,7 @@ $border-radius: (
 			border-radius-small:		0.1875rem,
 			border-radius-middle:		0.25rem,
 			border-radius-big:			0.375rem);
-// 开关按钮
+// 渐变开关按钮
 $btnBgGradientSwitch:    false !default;//是否启用渐变背景 
 @mixin linear-gradient ($from-color, $to-color){
 	background-image: -webkit-linear-gradient($from-color $to-color); // Safari 5.1+, Chrome
@@ -38,18 +38,27 @@ $button-extends: (
 		  	button-middle-dark: dark #fff middle false middle,
 			button-big-primary: primary #fff big false big,
 		  	button-big-danger: danger #fff big false big,
-		  	button-big-dark: dark #fff big false big);
+		  	button-big-dark: dark #fff big false big,
+			button-small-radius-primary: primary #fff small small small,
+		  	button-small-radius-danger: danger #fff small small small,
+		  	button-small-radius-dark: dark #fff small small small,
+			button-middle-radius-primary: primary #fff middle middle middle,
+		  	button-middle-radius-danger: danger #fff middle middle middle,
+		  	button-middle-radius-dark: dark #fff middle middle middle,
+			button-big-radius-primary: primary #fff big big big,
+		  	button-big-radius-danger: danger #fff big big big,
+		  	button-big-radius-dark: dark #fff big big big);
 
 $blcok-button-extends: (
-			blcok-button-small-primary: primary #fff small false small,
-		  	blcok-button-small-danger: danger #fff small false small,
-		  	blcok-button-small-dark: dark #fff small false small,
-			blcok-button-middle-primary: primary #fff middle false middle,
-		  	blcok-button-middle-danger: danger #fff middle false middle,
-		  	blcok-button-middle-dark: dark #fff middle false middle,
-			blcok-button-big-primary: primary #fff big false big,
-		  	blcok-button-big-danger: danger #fff big false big,
-		  	blcok-button-big-dark: dark #fff big false big);
+			block-button-small-primary: primary #fff small false small,
+		  	block-button-small-danger: danger #fff small false small,
+		  	block-button-small-dark: dark #fff small false small,
+			block-button-middle-primary: primary #fff middle false middle,
+		  	block-button-middle-danger: danger #fff middle false middle,
+		  	block-button-middle-dark: dark #fff middle false middle,
+			block-button-big-primary: primary #fff big false big,
+		  	block-button-big-danger: danger #fff big false big,
+		  	block-button-big-dark: dark #fff big false big);
 
 // 基础块级按钮样式 
 %block-btn-basic {
@@ -184,6 +193,7 @@ $blcok-button-extends: (
 }
 
 // small按钮
+// --------------------------------------------
 .button-primary {
 	@extend %button-small-primary;
 }
@@ -216,6 +226,43 @@ $blcok-button-extends: (
 	@extend %button-big-dark;
 }
 
+// 圆角按钮
+// ----------------------------------
+// small按钮
+.button-radius-primary {
+	@extend %button-small-radius-primary;
+}
+.button-radius-danger {
+	@extend %button-small-radius-danger;
+}
+.button-radius-dark {
+	@extend %button-small-radius-dark;
+}
+
+// middle按钮
+.button-middle-radius-primary {
+	@extend %button-middle-radius-primary;
+}
+.button-middle-radius-danger {
+	@extend %button-middle-radius-danger;
+}
+.button-middle-radius-dark {
+	@extend %button-middle-radius-dark;
+}
+
+// big按钮
+.button-big-radius-primary {
+	@extend %button-big-radius-primary;
+}
+.button-big-radius-danger {
+	@extend %button-big-radius-danger;
+}
+.button-big-radius-dark {
+	@extend %button-big-radius-dark;
+}
+
+// -------------------------------
+
 // block-small按钮
 .block-button-primary {
 	@extend %block-button-small-primary;
@@ -247,6 +294,7 @@ $blcok-button-extends: (
 }
 .block-button-big-dark {
 	@extend %block-button-big-dark;
+	@extend %border-radius-middle;
 }
 
 
