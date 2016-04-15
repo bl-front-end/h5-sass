@@ -45,4 +45,4 @@ or
 }
 ```
 
-** 按钮大小定义了三种small、middle、big，按钮颜色定义了primary、danger、dark三种颜色 **
+**按钮大小定义了三种small、middle、big，按钮颜色定义了primary、danger、dark三种颜色**
