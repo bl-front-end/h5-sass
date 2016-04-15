@@ -13,27 +13,6 @@
   cursor: pointer;
   outline: none; }
 
-.button-primary, .button-middle-primary, .button-big-primary, .button-radius-primary, .button-middle-radius-primary, .button-big-radius-primary, .block-button-primary, .block-button-middle-primary, .block-button-big-primary {
-  background-color: #0894ec; }
-
-.button-danger, .button-middle-danger, .button-big-danger, .button-radius-danger, .button-middle-radius-danger, .button-big-radius-danger, .block-button-danger, .block-button-middle-danger, .block-button-big-danger {
-  background-color: #ff0000; }
-
-.button-dark, .button-middle-dark, .button-big-dark, .button-radius-dark, .button-middle-radius-dark, .button-big-radius-dark, .block-button-dark, .block-button-middle-dark, .block-button-big-dark {
-  background-color: #444; }
-
-.outline-button-primary, .outline-button-middle-primary, .outline-button-big-primary, .outline-button-radius-primary, .outline-button-middle-radius-primary, .outline-button-big-radius-primary, .outline-block-button-primary, .outline-block-button-middle-primary, .outline-block-button-big-primary {
-  color: #0894ec;
-  border: 1px solid #0894ec; }
-
-.outline-button-danger, .outline-button-middle-danger, .outline-button-big-danger, .outline-button-radius-danger, .outline-button-middle-radius-danger, .outline-button-big-radius-danger, .outline-block-button-danger, .outline-block-button-middle-danger, .outline-block-button-big-danger {
-  color: #ff0000;
-  border: 1px solid #ff0000; }
-
-.outline-button-dark, .outline-button-middle-dark, .outline-button-big-dark, .outline-button-radius-dark, .outline-button-middle-radius-dark, .outline-button-big-radius-dark, .outline-block-button-dark, .outline-block-button-middle-dark, .outline-block-button-big-dark {
-  color: #444;
-  border: 1px solid #444; }
-
 .button-primary, .button-danger, .button-dark, .button-radius-primary, .button-radius-danger, .button-radius-dark, .block-button-primary, .block-button-danger, .block-button-dark, .outline-button-primary, .outline-button-danger, .outline-button-dark, .outline-button-radius-primary, .outline-button-radius-danger, .outline-button-radius-dark, .outline-block-button-primary, .outline-block-button-danger, .outline-block-button-dark {
   padding: 0.4375rem 1.125rem; }
 
@@ -68,165 +47,381 @@
   border-radius: 0.375rem; }
 
 .button-primary {
+  background-color: #0894ec;
   color: #fff; }
+  .button-primary:hover {
+    background-color: #0785d3; }
 
 .button-danger {
+  background-color: #ff0000;
   color: #fff; }
+  .button-danger:hover {
+    background-color: #e60000; }
 
 .button-dark {
+  background-color: #444;
   color: #fff; }
+  .button-dark:hover {
+    background-color: #373737; }
 
 .button-middle-primary {
+  background-color: #0894ec;
   color: #fff; }
+  .button-middle-primary:hover {
+    background-color: #0785d3; }
 
 .button-middle-danger {
+  background-color: #ff0000;
   color: #fff; }
+  .button-middle-danger:hover {
+    background-color: #e60000; }
 
 .button-middle-dark {
+  background-color: #444;
   color: #fff; }
+  .button-middle-dark:hover {
+    background-color: #373737; }
 
 .button-big-primary {
+  background-color: #0894ec;
   color: #fff; }
+  .button-big-primary:hover {
+    background-color: #0785d3; }
 
 .button-big-danger {
+  background-color: #ff0000;
   color: #fff; }
+  .button-big-danger:hover {
+    background-color: #e60000; }
 
 .button-big-dark {
+  background-color: #444;
   color: #fff; }
+  .button-big-dark:hover {
+    background-color: #373737; }
 
 .button-radius-primary {
+  background-color: #0894ec;
   color: #fff; }
+  .button-radius-primary:hover {
+    background-color: #0785d3; }
 
 .button-radius-danger {
+  background-color: #ff0000;
   color: #fff; }
+  .button-radius-danger:hover {
+    background-color: #e60000; }
 
 .button-radius-dark {
+  background-color: #444;
   color: #fff; }
+  .button-radius-dark:hover {
+    background-color: #373737; }
 
 .button-middle-radius-primary {
+  background-color: #0894ec;
   color: #fff; }
+  .button-middle-radius-primary:hover {
+    background-color: #0785d3; }
 
 .button-middle-radius-danger {
+  background-color: #ff0000;
   color: #fff; }
+  .button-middle-radius-danger:hover {
+    background-color: #e60000; }
 
 .button-middle-radius-dark {
+  background-color: #444;
   color: #fff; }
+  .button-middle-radius-dark:hover {
+    background-color: #373737; }
 
 .button-big-radius-primary {
+  background-color: #0894ec;
   color: #fff; }
+  .button-big-radius-primary:hover {
+    background-color: #0785d3; }
 
 .button-big-radius-danger {
+  background-color: #ff0000;
   color: #fff; }
+  .button-big-radius-danger:hover {
+    background-color: #e60000; }
 
 .button-big-radius-dark {
+  background-color: #444;
   color: #fff; }
+  .button-big-radius-dark:hover {
+    background-color: #373737; }
 
 .block-button-primary {
+  background-color: #0894ec;
   color: #fff; }
+  .block-button-primary:hover {
+    background-color: #0785d3; }
 
 .block-button-danger {
+  background-color: #ff0000;
   color: #fff; }
+  .block-button-danger:hover {
+    background-color: #e60000; }
 
 .block-button-dark {
+  background-color: #444;
   color: #fff; }
+  .block-button-dark:hover {
+    background-color: #373737; }
 
 .block-button-middle-primary {
+  background-color: #0894ec;
   color: #fff; }
+  .block-button-middle-primary:hover {
+    background-color: #0785d3; }
 
 .block-button-middle-danger {
+  background-color: #ff0000;
   color: #fff; }
+  .block-button-middle-danger:hover {
+    background-color: #e60000; }
 
 .block-button-middle-dark {
+  background-color: #444;
   color: #fff; }
+  .block-button-middle-dark:hover {
+    background-color: #373737; }
 
 .block-button-big-primary {
+  background-color: #0894ec;
   color: #fff; }
+  .block-button-big-primary:hover {
+    background-color: #0785d3; }
 
 .block-button-big-danger {
+  background-color: #ff0000;
   color: #fff; }
+  .block-button-big-danger:hover {
+    background-color: #e60000; }
 
 .block-button-big-dark {
+  background-color: #444;
   color: #fff; }
+  .block-button-big-dark:hover {
+    background-color: #373737; }
 
 .outline-button-primary {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #0894ec;
+  border: 1px solid #0894ec; }
+  .outline-button-primary:hover {
+    background-color: #0785d3;
+    color: #fff; }
 
 .outline-button-danger {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #ff0000;
+  border: 1px solid #ff0000; }
+  .outline-button-danger:hover {
+    background-color: #e60000;
+    color: #fff; }
 
 .outline-button-dark {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #444; }
+  .outline-button-dark:hover {
+    background-color: #373737;
+    color: #fff; }
 
 .outline-button-middle-primary {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #0894ec;
+  border: 1px solid #0894ec; }
+  .outline-button-middle-primary:hover {
+    background-color: #0785d3;
+    color: #fff; }
 
 .outline-button-middle-danger {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #ff0000;
+  border: 1px solid #ff0000; }
+  .outline-button-middle-danger:hover {
+    background-color: #e60000;
+    color: #fff; }
 
 .outline-button-middle-dark {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #444; }
+  .outline-button-middle-dark:hover {
+    background-color: #373737;
+    color: #fff; }
 
 .outline-button-big-primary {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #0894ec;
+  border: 1px solid #0894ec; }
+  .outline-button-big-primary:hover {
+    background-color: #0785d3;
+    color: #fff; }
 
 .outline-button-big-danger {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #ff0000;
+  border: 1px solid #ff0000; }
+  .outline-button-big-danger:hover {
+    background-color: #e60000;
+    color: #fff; }
 
 .outline-button-big-dark {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #444; }
+  .outline-button-big-dark:hover {
+    background-color: #373737;
+    color: #fff; }
 
 .outline-button-radius-primary {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #0894ec;
+  border: 1px solid #0894ec; }
+  .outline-button-radius-primary:hover {
+    background-color: #0785d3;
+    color: #fff; }
 
 .outline-button-radius-danger {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #ff0000;
+  border: 1px solid #ff0000; }
+  .outline-button-radius-danger:hover {
+    background-color: #e60000;
+    color: #fff; }
 
 .outline-button-radius-dark {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #444; }
+  .outline-button-radius-dark:hover {
+    background-color: #373737;
+    color: #fff; }
 
 .outline-button-middle-radius-primary {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #0894ec;
+  border: 1px solid #0894ec; }
+  .outline-button-middle-radius-primary:hover {
+    background-color: #0785d3;
+    color: #fff; }
 
 .outline-button-middle-radius-danger {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #ff0000;
+  border: 1px solid #ff0000; }
+  .outline-button-middle-radius-danger:hover {
+    background-color: #e60000;
+    color: #fff; }
 
 .outline-button-middle-radius-dark {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #444; }
+  .outline-button-middle-radius-dark:hover {
+    background-color: #373737;
+    color: #fff; }
 
 .outline-button-big-radius-primary {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #0894ec;
+  border: 1px solid #0894ec; }
+  .outline-button-big-radius-primary:hover {
+    background-color: #0785d3;
+    color: #fff; }
 
 .outline-button-big-radius-danger {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #ff0000;
+  border: 1px solid #ff0000; }
+  .outline-button-big-radius-danger:hover {
+    background-color: #e60000;
+    color: #fff; }
 
 .outline-button-big-radius-dark {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #444; }
+  .outline-button-big-radius-dark:hover {
+    background-color: #373737;
+    color: #fff; }
 
 .outline-block-button-primary {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #0894ec;
+  border: 1px solid #0894ec; }
+  .outline-block-button-primary:hover {
+    background-color: #0785d3;
+    color: #fff; }
 
 .outline-block-button-danger {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #ff0000;
+  border: 1px solid #ff0000; }
+  .outline-block-button-danger:hover {
+    background-color: #e60000;
+    color: #fff; }
 
 .outline-block-button-dark {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #444; }
+  .outline-block-button-dark:hover {
+    background-color: #373737;
+    color: #fff; }
 
 .outline-block-button-middle-primary {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #0894ec;
+  border: 1px solid #0894ec; }
+  .outline-block-button-middle-primary:hover {
+    background-color: #0785d3;
+    color: #fff; }
 
 .outline-block-button-middle-danger {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #ff0000;
+  border: 1px solid #ff0000; }
+  .outline-block-button-middle-danger:hover {
+    background-color: #e60000;
+    color: #fff; }
 
 .outline-block-button-middle-dark {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #444; }
+  .outline-block-button-middle-dark:hover {
+    background-color: #373737;
+    color: #fff; }
 
 .outline-block-button-big-primary {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #0894ec;
+  border: 1px solid #0894ec; }
+  .outline-block-button-big-primary:hover {
+    background-color: #0785d3;
+    color: #fff; }
 
 .outline-block-button-big-danger {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #ff0000;
+  border: 1px solid #ff0000; }
+  .outline-block-button-big-danger:hover {
+    background-color: #e60000;
+    color: #fff; }
 
 .outline-block-button-big-dark {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #444; }
+  .outline-block-button-big-dark:hover {
+    background-color: #373737;
+    color: #fff; }
 
 /*# sourceMappingURL=h5-btn.css.map */
