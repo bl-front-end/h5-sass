@@ -1,0 +1,232 @@
+.block-button-primary, .block-button-danger, .block-button-dark, .block-button-middle-primary, .block-button-middle-danger, .block-button-middle-dark, .block-button-big-primary, .block-button-big-danger, .block-button-big-dark, .outline-block-button-primary, .outline-block-button-danger, .outline-block-button-dark, .outline-block-button-middle-primary, .outline-block-button-middle-danger, .outline-block-button-middle-dark, .outline-block-button-big-primary, .outline-block-button-big-danger, .outline-block-button-big-dark {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none; }
+
+.button-primary, .button-danger, .button-dark, .button-middle-primary, .button-middle-danger, .button-middle-dark, .button-big-primary, .button-big-danger, .button-big-dark, .button-radius-primary, .button-radius-danger, .button-radius-dark, .button-middle-radius-primary, .button-middle-radius-danger, .button-middle-radius-dark, .button-big-radius-primary, .button-big-radius-danger, .button-big-radius-dark, .outline-button-primary, .outline-button-danger, .outline-button-dark, .outline-button-middle-primary, .outline-button-middle-danger, .outline-button-middle-dark, .outline-button-big-primary, .outline-button-big-danger, .outline-button-big-dark, .outline-button-radius-primary, .outline-button-radius-danger, .outline-button-radius-dark, .outline-button-middle-radius-primary, .outline-button-middle-radius-danger, .outline-button-middle-radius-dark, .outline-button-big-radius-primary, .outline-button-big-radius-danger, .outline-button-big-radius-dark {
+  display: inline-block;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none; }
+
+.button-primary, .button-middle-primary, .button-big-primary, .button-radius-primary, .button-middle-radius-primary, .button-big-radius-primary, .block-button-primary, .block-button-middle-primary, .block-button-big-primary {
+  background-color: #0894ec; }
+
+.button-danger, .button-middle-danger, .button-big-danger, .button-radius-danger, .button-middle-radius-danger, .button-big-radius-danger, .block-button-danger, .block-button-middle-danger, .block-button-big-danger {
+  background-color: #ff0000; }
+
+.button-dark, .button-middle-dark, .button-big-dark, .button-radius-dark, .button-middle-radius-dark, .button-big-radius-dark, .block-button-dark, .block-button-middle-dark, .block-button-big-dark {
+  background-color: #444; }
+
+.outline-button-primary, .outline-button-middle-primary, .outline-button-big-primary, .outline-button-radius-primary, .outline-button-middle-radius-primary, .outline-button-big-radius-primary, .outline-block-button-primary, .outline-block-button-middle-primary, .outline-block-button-big-primary {
+  color: #0894ec;
+  border: 1px solid #0894ec; }
+
+.outline-button-danger, .outline-button-middle-danger, .outline-button-big-danger, .outline-button-radius-danger, .outline-button-middle-radius-danger, .outline-button-big-radius-danger, .outline-block-button-danger, .outline-block-button-middle-danger, .outline-block-button-big-danger {
+  color: #ff0000;
+  border: 1px solid #ff0000; }
+
+.outline-button-dark, .outline-button-middle-dark, .outline-button-big-dark, .outline-button-radius-dark, .outline-button-middle-radius-dark, .outline-button-big-radius-dark, .outline-block-button-dark, .outline-block-button-middle-dark, .outline-block-button-big-dark {
+  color: #444;
+  border: 1px solid #444; }
+
+.button-primary, .button-danger, .button-dark, .button-radius-primary, .button-radius-danger, .button-radius-dark, .block-button-primary, .block-button-danger, .block-button-dark, .outline-button-primary, .outline-button-danger, .outline-button-dark, .outline-button-radius-primary, .outline-button-radius-danger, .outline-button-radius-dark, .outline-block-button-primary, .outline-block-button-danger, .outline-block-button-dark {
+  padding: 0.4375rem 1.125rem; }
+
+.button-middle-primary, .button-middle-danger, .button-middle-dark, .button-middle-radius-primary, .button-middle-radius-danger, .button-middle-radius-dark, .block-button-middle-primary, .block-button-middle-danger, .block-button-middle-dark, .outline-button-middle-primary, .outline-button-middle-danger, .outline-button-middle-dark, .outline-button-middle-radius-primary, .outline-button-middle-radius-danger, .outline-button-middle-radius-dark, .outline-block-button-middle-primary, .outline-block-button-middle-danger, .outline-block-button-middle-dark {
+  padding: 1.375rem 1.875rem; }
+
+.button-big-primary, .button-big-danger, .button-big-dark, .button-big-radius-primary, .button-big-radius-danger, .button-big-radius-dark, .block-button-big-primary, .block-button-big-danger, .block-button-big-dark, .outline-button-big-primary, .outline-button-big-danger, .outline-button-big-dark, .outline-button-big-radius-primary, .outline-button-big-radius-danger, .outline-button-big-radius-dark, .outline-block-button-big-primary, .outline-block-button-big-danger, .outline-block-button-big-dark {
+  padding: 1.875rem 3.375rem; }
+
+.button-primary, .button-danger, .button-dark, .button-radius-primary, .button-radius-danger, .button-radius-dark, .block-button-primary, .block-button-danger, .block-button-dark, .outline-button-primary, .outline-button-danger, .outline-button-dark, .outline-button-radius-primary, .outline-button-radius-danger, .outline-button-radius-dark, .outline-block-button-primary, .outline-block-button-danger, .outline-block-button-dark {
+  font-size: 0.6875rem; }
+
+.button-middle-primary, .button-middle-danger, .button-middle-dark, .button-middle-radius-primary, .button-middle-radius-danger, .button-middle-radius-dark, .block-button-middle-primary, .block-button-middle-danger, .block-button-middle-dark, .outline-button-middle-primary, .outline-button-middle-danger, .outline-button-middle-dark, .outline-button-middle-radius-primary, .outline-button-middle-radius-danger, .outline-button-middle-radius-dark, .outline-block-button-middle-primary, .outline-block-button-middle-danger, .outline-block-button-middle-dark {
+  font-size: 0.875rem; }
+
+.button-big-primary, .button-big-danger, .button-big-dark, .button-big-radius-primary, .button-big-radius-danger, .button-big-radius-dark, .block-button-big-primary, .block-button-big-danger, .block-button-big-dark, .outline-button-big-primary, .outline-button-big-danger, .outline-button-big-dark, .outline-button-big-radius-primary, .outline-button-big-radius-danger, .outline-button-big-radius-dark, .outline-block-button-big-primary, .outline-block-button-big-danger, .outline-block-button-big-dark {
+  font-size: 1.125rem; }
+
+.button-radius-primary, .button-radius-danger, .button-radius-dark, .outline-button-radius-primary, .outline-button-radius-danger, .outline-button-radius-dark {
+  -webkit-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  border-radius: 0.1875rem; }
+
+.button-middle-radius-primary, .button-middle-radius-danger, .button-middle-radius-dark, .outline-button-middle-radius-primary, .outline-button-middle-radius-danger, .outline-button-middle-radius-dark, .block-button-big-dark, .outline-block-button-big-dark {
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem; }
+
+.button-big-radius-primary, .button-big-radius-danger, .button-big-radius-dark, .outline-button-big-radius-primary, .outline-button-big-radius-danger, .outline-button-big-radius-dark {
+  -webkit-border-radius: 0.375rem;
+  -moz-border-radius: 0.375rem;
+  border-radius: 0.375rem; }
+
+.button-primary {
+  color: #fff; }
+
+.button-danger {
+  color: #fff; }
+
+.button-dark {
+  color: #fff; }
+
+.button-middle-primary {
+  color: #fff; }
+
+.button-middle-danger {
+  color: #fff; }
+
+.button-middle-dark {
+  color: #fff; }
+
+.button-big-primary {
+  color: #fff; }
+
+.button-big-danger {
+  color: #fff; }
+
+.button-big-dark {
+  color: #fff; }
+
+.button-radius-primary {
+  color: #fff; }
+
+.button-radius-danger {
+  color: #fff; }
+
+.button-radius-dark {
+  color: #fff; }
+
+.button-middle-radius-primary {
+  color: #fff; }
+
+.button-middle-radius-danger {
+  color: #fff; }
+
+.button-middle-radius-dark {
+  color: #fff; }
+
+.button-big-radius-primary {
+  color: #fff; }
+
+.button-big-radius-danger {
+  color: #fff; }
+
+.button-big-radius-dark {
+  color: #fff; }
+
+.block-button-primary {
+  color: #fff; }
+
+.block-button-danger {
+  color: #fff; }
+
+.block-button-dark {
+  color: #fff; }
+
+.block-button-middle-primary {
+  color: #fff; }
+
+.block-button-middle-danger {
+  color: #fff; }
+
+.block-button-middle-dark {
+  color: #fff; }
+
+.block-button-big-primary {
+  color: #fff; }
+
+.block-button-big-danger {
+  color: #fff; }
+
+.block-button-big-dark {
+  color: #fff; }
+
+.outline-button-primary {
+  background-color: transparent; }
+
+.outline-button-danger {
+  background-color: transparent; }
+
+.outline-button-dark {
+  background-color: transparent; }
+
+.outline-button-middle-primary {
+  background-color: transparent; }
+
+.outline-button-middle-danger {
+  background-color: transparent; }
+
+.outline-button-middle-dark {
+  background-color: transparent; }
+
+.outline-button-big-primary {
+  background-color: transparent; }
+
+.outline-button-big-danger {
+  background-color: transparent; }
+
+.outline-button-big-dark {
+  background-color: transparent; }
+
+.outline-button-radius-primary {
+  background-color: transparent; }
+
+.outline-button-radius-danger {
+  background-color: transparent; }
+
+.outline-button-radius-dark {
+  background-color: transparent; }
+
+.outline-button-middle-radius-primary {
+  background-color: transparent; }
+
+.outline-button-middle-radius-danger {
+  background-color: transparent; }
+
+.outline-button-middle-radius-dark {
+  background-color: transparent; }
+
+.outline-button-big-radius-primary {
+  background-color: transparent; }
+
+.outline-button-big-radius-danger {
+  background-color: transparent; }
+
+.outline-button-big-radius-dark {
+  background-color: transparent; }
+
+.outline-block-button-primary {
+  background-color: transparent; }
+
+.outline-block-button-danger {
+  background-color: transparent; }
+
+.outline-block-button-dark {
+  background-color: transparent; }
+
+.outline-block-button-middle-primary {
+  background-color: transparent; }
+
+.outline-block-button-middle-danger {
+  background-color: transparent; }
+
+.outline-block-button-middle-dark {
+  background-color: transparent; }
+
+.outline-block-button-big-primary {
+  background-color: transparent; }
+
+.outline-block-button-big-danger {
+  background-color: transparent; }
+
+.outline-block-button-big-dark {
+  background-color: transparent; }
+
+/*# sourceMappingURL=h5-btn.css.map */
