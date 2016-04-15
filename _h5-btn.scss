@@ -2,22 +2,25 @@
 //----------------------------------
 
 // 变量
+$primary: #0894ec;
+$danger: #ff0000;
+$dark: #444;
 $bg-colors: (
-			bg-color-primary:			#0894ec,
-			bg-color-danger:			#ff0000, 
-			bg-color-dark:				#444);
+			bg-color-primary:			$primary,
+			bg-color-danger:			$danger, 
+			bg-color-dark:				$dark);
 $colors: (
-			color-primary:				#0894ec,
-			color-danger:				#ff0000, 
-			color-dark:					#444);
+			color-primary:				$primary,
+			color-danger:				$danger, 
+			color-dark:					$dark);
 $border-colors: (
-			border-color-primary:		#0894ec,
-			border-color-danger:		#ff0000, 
-			border-color-dark:			#444);
+			border-color-primary:		$primary,
+			border-color-danger:		$danger, 
+			border-color-dark:			$dark);
 $sizes: (
 			button-small:				0.4375rem 1.125rem, 
-			button-middle:				.875rem 1.875rem, 
-			button-big:					1.625rem 3.375rem);
+			button-middle:				1.375rem 1.875rem, 
+			button-big:					1.875rem 3.375rem);
 $font-sizes: (
 			font-size-small:			0.6875rem,
 			font-size-middle:			0.875rem,
@@ -34,66 +37,66 @@ $btnBgGradientSwitch:    false !default;//是否启用渐变背景
 }
 // 定义组合按钮样式，顺序依次是背景颜色、文字颜色、字体大小、边框圆角、按钮padding, 值可以以后继续添加，可以是已经声明了的， 也可以自定义值。
 $button-extends: (
-			button-small-primary: primary #fff small false small,
-		  	button-small-danger: danger #fff small false small,
-		  	button-small-dark: dark #fff small false small,
-			button-middle-primary: primary #fff middle false middle,
-		  	button-middle-danger: danger #fff middle false middle,
-		  	button-middle-dark: dark #fff middle false middle,
-			button-big-primary: primary #fff big false big,
-		  	button-big-danger: danger #fff big false big,
-		  	button-big-dark: dark #fff big false big,
-			button-small-radius-primary: primary #fff small small small,
-		  	button-small-radius-danger: danger #fff small small small,
-		  	button-small-radius-dark: dark #fff small small small,
-			button-middle-radius-primary: primary #fff middle middle middle,
-		  	button-middle-radius-danger: danger #fff middle middle middle,
-		  	button-middle-radius-dark: dark #fff middle middle middle,
-			button-big-radius-primary: primary #fff big big big,
-		  	button-big-radius-danger: danger #fff big big big,
-		  	button-big-radius-dark: dark #fff big big big);
+			button-small-primary: $primary #fff small false small,
+		  	button-small-danger: $danger #fff small false small,
+		  	button-small-dark: $dark #fff small false small,
+			button-middle-primary: $primary #fff middle false middle,
+		  	button-middle-danger: $danger #fff middle false middle,
+		  	button-middle-dark: $dark #fff middle false middle,
+			button-big-primary: $primary #fff big false big,
+		  	button-big-danger: $danger #fff big false big,
+		  	button-big-dark: $dark #fff big false big,
+			button-small-radius-primary: $primary #fff small small small,
+		  	button-small-radius-danger: $danger #fff small small small,
+		  	button-small-radius-dark: $dark #fff small small small,
+			button-middle-radius-primary: $primary #fff middle middle middle,
+		  	button-middle-radius-danger: $danger #fff middle middle middle,
+		  	button-middle-radius-dark: $dark #fff middle middle middle,
+			button-big-radius-primary: $primary #fff big big big,
+		  	button-big-radius-danger: $danger #fff big big big,
+		  	button-big-radius-dark: $dark #fff big big big);
 
 $blcok-button-extends: (
-			block-button-small-primary: primary #fff small false small,
-		  	block-button-small-danger: danger #fff small false small,
-		  	block-button-small-dark: dark #fff small false small,
-			block-button-middle-primary: primary #fff middle false middle,
-		  	block-button-middle-danger: danger #fff middle false middle,
-		  	block-button-middle-dark: dark #fff middle false middle,
-			block-button-big-primary: primary #fff big false big,
-		  	block-button-big-danger: danger #fff big false big,
-		  	block-button-big-dark: dark #fff big false big);
+			block-button-small-primary: $primary #fff small false small,
+		  	block-button-small-danger: $danger #fff small false small,
+		  	block-button-small-dark: $dark #fff small false small,
+			block-button-middle-primary: $primary #fff middle false middle,
+		  	block-button-middle-danger: $danger #fff middle false middle,
+		  	block-button-middle-dark: $dark #fff middle false middle,
+			block-button-big-primary: $primary #fff big false big,
+		  	block-button-big-danger: $danger #fff big false big,
+		  	block-button-big-dark: $dark #fff big false big);
 
 $outline-block-button-extends: (
-			outline-block-button-small-primary: false primary small false small,
-		  	outline-block-button-small-danger: false danger small false small,
-		  	outline-block-button-small-dark: false dark small false small,
-			outline-block-button-middle-primary: false primary middle false middle,
-		  	outline-block-button-middle-danger: false danger middle false middle,
-		  	outline-block-button-middle-dark: false dark middle false middle,
-			outline-block-button-big-primary: false primary big false big,
-		  	outline-block-button-big-danger: false danger big false big,
-		  	outline-block-button-big-dark: false dark big false big);
+			outline-block-button-small-primary: false $primary small false small,
+		  	outline-block-button-small-danger: false $danger small false small,
+		  	outline-block-button-small-dark: false $dark small false small,
+			outline-block-button-middle-primary: false $primary middle false middle,
+		  	outline-block-button-middle-danger: false $danger middle false middle,
+		  	outline-block-button-middle-dark: false $dark middle false middle,
+			outline-block-button-big-primary: false $primary big false big,
+		  	outline-block-button-big-danger: false $danger big false big,
+		  	outline-block-button-big-dark: false $dark big false big);
 
 $outline-button-extends: (
-			outline-button-small-primary: false primary small false small,
-		  	outline-button-small-danger: false danger small false small,
-		  	outline-button-small-dark: false dark small false small,
-			outline-button-middle-primary: false primary middle false middle,
-		  	outline-button-middle-danger: false danger middle false middle,
-		  	outline-button-middle-dark: false dark middle false middle,
-			outline-button-big-primary: false primary big false big,
-		  	outline-button-big-danger: false danger big false big,
-		  	outline-button-big-dark: false dark big false big,
-			outline-button-small-radius-primary: false primary small small small,
-		  	outline-button-small-radius-danger: false danger small small small,
-		  	outline-button-small-radius-dark: false dark small small small,
-			outline-button-middle-radius-primary: false primary middle middle middle,
-		  	outline-button-middle-radius-danger: false danger middle middle middle,
-		  	outline-button-middle-radius-dark: false dark middle middle middle,
-			outline-button-big-radius-primary: false primary big big big,
-		  	outline-button-big-radius-danger: false danger big big big,
-		  	outline-button-big-radius-dark: false dark big big big);
+			outline-button-small-primary: false $primary small false small,
+		  	outline-button-small-danger: false $danger small false small,
+		  	outline-button-small-dark: false $dark small false small,
+			outline-button-middle-primary: false $primary middle false middle,
+		  	outline-button-middle-danger: false $danger middle false middle,
+		  	outline-button-middle-dark: false $dark middle false middle,
+			outline-button-big-primary: false $primary big false big,
+		  	outline-button-big-danger: false $danger big false big,
+		  	outline-button-big-dark: false $dark big false big,
+			outline-button-small-radius-primary: false $primary small small small,
+		  	outline-button-small-radius-danger: false $danger small small small,
+		  	outline-button-small-radius-dark: false $dark small small small,
+			outline-button-middle-radius-primary: false $primary middle middle middle,
+		  	outline-button-middle-radius-danger: false $danger middle middle middle,
+		  	outline-button-middle-radius-dark: false $dark middle middle middle,
+			outline-button-big-radius-primary: false $primary big big big,
+		  	outline-button-big-radius-danger: false $danger big big big,
+		  	outline-button-big-radius-dark: false $dark big big big);
 
 // 基础块级按钮样式 
 %block-btn-basic {
@@ -189,6 +192,11 @@ $outline-button-extends: (
 		@if $btnBgGradientSwitch == true {
 		  @include linear-gradient(#0894ec, darken(#0894ec, 5%));
 		}
+
+		$base-color-hover:    darken(nth($button-extend, 1), 5%);
+		&:hover{
+			background-color: $base-color-hover;
+		}
 	}
 }
 
@@ -231,6 +239,11 @@ $outline-button-extends: (
 		//判断是否显示背景渐变		
 		@if $btnBgGradientSwitch == true {
 		  @include linear-gradient(#0894ec, darken(#0894ec, 5%));
+		}
+
+		$base-color-hover:    darken(nth($button-extend, 1), 5%);
+		&:hover{
+			background-color: $base-color-hover;
 		}
 	}
 }
@@ -276,6 +289,12 @@ $outline-button-extends: (
 		@if $btnBgGradientSwitch == true {
 		  @include linear-gradient(#0894ec, darken(#0894ec, 5%));
 		}
+
+		$base-color-hover:    darken(nth($button-extend, 2), 5%);
+		&:hover{
+			background-color: $base-color-hover;
+			color: #fff;
+		}
 	}
 }
 
@@ -319,6 +338,12 @@ $outline-button-extends: (
 		//判断是否显示背景渐变		
 		@if $btnBgGradientSwitch == true {
 		  @include linear-gradient(#0894ec, darken(#0894ec, 5%));
+		}
+
+		$base-color-hover:    darken(nth($button-extend, 2), 5%);
+		&:hover{
+			background-color: $base-color-hover;
+			color: #fff;
 		}
 	}
 }
