@@ -32,7 +32,7 @@ or
 }
 ```
 
-* 自己组件按钮样式，先要引入基础的按钮样式，再分别引入％bg-color-primary、％color-primary、％button-small、％font-size-small、％border-radius-small，分别定义的是背景颜色、文字颜色、按钮padding、字体大小、边框圆角、
+* 自己组件按钮样式，先要引入基础的按钮样式，再分别引入%bg-color-primary、%color-primary、%button-small、%font-size-small、%border-radius-small，分别定义的是背景颜色、文字颜色、按钮padding、字体大小、边框圆角、
 
 ``` sass
 .button-primary {
