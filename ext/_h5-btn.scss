@@ -10,6 +10,10 @@ $colors: (
 			color-primary:				#0894ec,
 			color-danger:				#ff0000, 
 			color-dark:					#444);
+$border-colors: (
+			border-color-primary:		#0894ec,
+			border-color-danger:		#ff0000, 
+			border-color-dark:			#444);
 $sizes: (
 			button-small:				0.4375rem 1.125rem, 
 			button-middle:				1.375rem 1.875rem, 
@@ -60,6 +64,37 @@ $blcok-button-extends: (
 		  	block-button-big-danger: danger #fff big false big,
 		  	block-button-big-dark: dark #fff big false big);
 
+$outline-block-button-extends: (
+			outline-block-button-small-primary: false primary small false small,
+		  	outline-block-button-small-danger: false danger small false small,
+		  	outline-block-button-small-dark: false dark small false small,
+			outline-block-button-middle-primary: false primary middle false middle,
+		  	outline-block-button-middle-danger: false danger middle false middle,
+		  	outline-block-button-middle-dark: false dark middle false middle,
+			outline-block-button-big-primary: false primary big false big,
+		  	outline-block-button-big-danger: false danger big false big,
+		  	outline-block-button-big-dark: false dark big false big);
+
+$outline-button-extends: (
+			outline-button-small-primary: false primary small false small,
+		  	outline-button-small-danger: false danger small false small,
+		  	outline-button-small-dark: false dark small false small,
+			outline-button-middle-primary: false primary middle false middle,
+		  	outline-button-middle-danger: false danger middle false middle,
+		  	outline-button-middle-dark: false dark middle false middle,
+			outline-button-big-primary: false primary big false big,
+		  	outline-button-big-danger: false danger big false big,
+		  	outline-button-big-dark: false dark big false big,
+			outline-button-small-radius-primary: false primary small small small,
+		  	outline-button-small-radius-danger: false danger small small small,
+		  	outline-button-small-radius-dark: false dark small small small,
+			outline-button-middle-radius-primary: false primary middle middle middle,
+		  	outline-button-middle-radius-danger: false danger middle middle middle,
+		  	outline-button-middle-radius-dark: false dark middle middle middle,
+			outline-button-big-radius-primary: false primary big big big,
+		  	outline-button-big-radius-danger: false danger big big big,
+		  	outline-button-big-radius-dark: false dark big big big);
+
 // 基础块级按钮样式 
 %block-btn-basic {
   position: relative;
@@ -90,6 +125,12 @@ $blcok-button-extends: (
 		color: $color;
 	}
 }
+@each $color-name, $color in $border-colors {
+	%#{$color-name} {
+		color: $color;
+		border: 1px solid $color;
+	}
+}
 @each $size-name, $size in $sizes {
 	%#{$size-name} {
 		padding: $size;
@@ -108,6 +149,7 @@ $blcok-button-extends: (
 	}
 }
 
+// inline-button
 @each $name, $button-extend in $button-extends {
 	%#{$name} {
 		@extend %btn-basic;
@@ -150,12 +192,13 @@ $blcok-button-extends: (
 	}
 }
 
+// block-button
 @each $name, $button-extend in $blcok-button-extends {
 	%#{$name} {
 		@extend %block-btn-basic;
 		@if type-of(nth($button-extend, 1)) == color {
 			background-color: nth($button-extend, 1);
-		} @else {
+		} @else  {
 			@extend %bg-color-#{nth($button-extend, 1)};
 		}
 
@@ -163,6 +206,94 @@ $blcok-button-extends: (
 			color: nth($button-extend, 2);
 		} @else {
 			@extend %color-#{nth($button-extend, 2)};
+		}
+		
+		@if type-of(nth($button-extend, 3)) == number {
+			font-size: nth($button-extend, 3)
+		} @else {
+			@extend %font-size-#{nth($button-extend, 3)};
+		}
+		
+		@if nth($button-extend, 4) != false {
+			@extend %border-radius-#{nth($button-extend, 4)};
+		} @else if type-of(nth($button-extend, 4)) == number{
+			-webkit-border-radius: nth($button-extend, 4);
+			-moz-border-radius: nth($button-extend, 4);
+			border-radius: nth($button-extend, 4);
+		}
+
+		@if type-of(nth($button-extend, 5)) == number {
+			padding: nth($button-extend, 5) nth($button-extend, 6);
+		} @else {
+			@extend %button-#{nth($button-extend, 5)};
+		}
+
+		//判断是否显示背景渐变		
+		@if $btnBgGradientSwitch == true {
+		  @include linear-gradient(#0894ec, darken(#0894ec, 5%));
+		}
+	}
+}
+
+// outline-button
+@each $name, $button-extend in $outline-button-extends {
+	%#{$name} {
+		@extend %btn-basic;
+		@if type-of(nth($button-extend, 1)) {
+			background-color: transparent;
+		} @else {
+			background-color: nth($button-extend, 1);
+		}
+
+		@if type-of(nth($button-extend, 2)) == color {
+			color: nth($button-extend, 2);
+			border: 1px solid nth($button-extend, 2);
+		} @else {
+			@extend %border-color-#{nth($button-extend, 2)};
+		}
+		
+		@if type-of(nth($button-extend, 3)) == number {
+			font-size: nth($button-extend, 3)
+		} @else {
+			@extend %font-size-#{nth($button-extend, 3)};
+		}
+		
+		@if nth($button-extend, 4) != false {
+			@extend %border-radius-#{nth($button-extend, 4)};
+		} @else if type-of(nth($button-extend, 4)) == number{
+			-webkit-border-radius: nth($button-extend, 4);
+			-moz-border-radius: nth($button-extend, 4);
+			border-radius: nth($button-extend, 4);
+		}
+
+		@if type-of(nth($button-extend, 5)) == number {
+			padding: nth($button-extend, 5) nth($button-extend, 6);
+		} @else {
+			@extend %button-#{nth($button-extend, 5)};
+		}
+
+		//判断是否显示背景渐变		
+		@if $btnBgGradientSwitch == true {
+		  @include linear-gradient(#0894ec, darken(#0894ec, 5%));
+		}
+	}
+}
+
+// outline-block-button
+@each $name, $button-extend in $outline-block-button-extends {
+	%#{$name} {
+		@extend %block-btn-basic;
+		@if type-of(nth($button-extend, 1)) {
+			background-color: transparent;
+		} @else {
+			background-color: nth($button-extend, 1);
+		}
+
+		@if type-of(nth($button-extend, 2)) == color {
+			color: nth($button-extend, 2);
+			border: 1px solid nth($button-extend, 2);
+		} @else {
+			@extend %border-color-#{nth($button-extend, 2)};
 		}
 		
 		@if type-of(nth($button-extend, 3)) == number {
@@ -261,8 +392,76 @@ $blcok-button-extends: (
 	@extend %button-big-radius-dark;
 }
 
-// -------------------------------
+// outline-small按钮
+// --------------------------------------------
+.outline-button-primary {
+	@extend %outline-button-small-primary;
+}
+.outline-button-danger {
+	@extend %outline-button-small-danger;
+}
+.outline-button-dark {
+	@extend %outline-button-small-dark;
+}
 
+// middle按钮
+.outline-button-middle-primary {
+	@extend %outline-button-middle-primary;
+}
+.outline-button-middle-danger {
+	@extend %outline-button-middle-danger;
+}
+.outline-button-middle-dark {
+	@extend %outline-button-middle-dark;
+}
+
+// big按钮
+.outline-button-big-primary {
+	@extend %outline-button-big-primary;
+}
+.outline-button-big-danger {
+	@extend %outline-button-big-danger;
+}
+.outline-button-big-dark {
+	@extend %outline-button-big-dark;
+}
+
+// 圆角按钮
+// ----------------------------------
+// small按钮
+.outline-button-radius-primary {
+	@extend %outline-button-small-radius-primary;
+}
+.outline-button-radius-danger {
+	@extend %outline-button-small-radius-danger;
+}
+.outline-button-radius-dark {
+	@extend %outline-button-small-radius-dark;
+}
+
+// middle按钮
+.outline-button-middle-radius-primary {
+	@extend %outline-button-middle-radius-primary;
+}
+.outline-button-middle-radius-danger {
+	@extend %outline-button-middle-radius-danger;
+}
+.outline-button-middle-radius-dark {
+	@extend %outline-button-middle-radius-dark;
+}
+
+// big按钮
+.outline-button-big-radius-primary {
+	@extend %outline-button-big-radius-primary;
+}
+.outline-button-big-radius-danger {
+	@extend %outline-button-big-radius-danger;
+}
+.outline-button-big-radius-dark {
+	@extend %outline-button-big-radius-dark;
+}
+
+// -------------------------------
 // block-small按钮
 .block-button-primary {
 	@extend %block-button-small-primary;
@@ -294,6 +493,41 @@ $blcok-button-extends: (
 }
 .block-button-big-dark {
 	@extend %block-button-big-dark;
+	@extend %border-radius-middle;
+}
+
+// outline-block按钮
+// -------------------------------
+.outline-block-button-primary {
+	@extend %outline-block-button-small-primary;
+}
+.outline-block-button-danger {
+	@extend %outline-block-button-small-danger;
+}
+.outline-block-button-dark {
+	@extend %outline-block-button-small-dark;
+}
+
+// outline-block-middle按钮
+.outline-block-button-middle-primary {
+	@extend %outline-block-button-middle-primary;
+}
+.outline-block-button-middle-danger {
+	@extend %outline-block-button-middle-danger;
+}
+.outline-block-button-middle-dark {
+	@extend %outline-block-button-middle-dark;
+}
+
+// outline-block-big按钮
+.outline-block-button-big-primary {
+	@extend %outline-block-button-big-primary;
+}
+.outline-block-button-big-danger {
+	@extend %outline-block-button-big-danger;
+}
+.outline-block-button-big-dark {
+	@extend %outline-block-button-big-dark;
 	@extend %border-radius-middle;
 }
 
