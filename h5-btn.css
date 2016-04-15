@@ -49,170 +49,170 @@
 .button-primary {
   background-color: #0894ec;
   color: #fff; }
-  .button-primary:hover {
+  .button-primary:hover:not(:disabled), .button-primary:active:not(:disabled), .button-primary:focus:not(:disabled) {
     background-color: #0785d3; }
 
 .button-danger {
   background-color: #ff0000;
   color: #fff; }
-  .button-danger:hover {
+  .button-danger:hover:not(:disabled), .button-danger:active:not(:disabled), .button-danger:focus:not(:disabled) {
     background-color: #e60000; }
 
 .button-dark {
   background-color: #444;
   color: #fff; }
-  .button-dark:hover {
+  .button-dark:hover:not(:disabled), .button-dark:active:not(:disabled), .button-dark:focus:not(:disabled) {
     background-color: #373737; }
 
 .button-middle-primary {
   background-color: #0894ec;
   color: #fff; }
-  .button-middle-primary:hover {
+  .button-middle-primary:hover:not(:disabled), .button-middle-primary:active:not(:disabled), .button-middle-primary:focus:not(:disabled) {
     background-color: #0785d3; }
 
 .button-middle-danger {
   background-color: #ff0000;
   color: #fff; }
-  .button-middle-danger:hover {
+  .button-middle-danger:hover:not(:disabled), .button-middle-danger:active:not(:disabled), .button-middle-danger:focus:not(:disabled) {
     background-color: #e60000; }
 
 .button-middle-dark {
   background-color: #444;
   color: #fff; }
-  .button-middle-dark:hover {
+  .button-middle-dark:hover:not(:disabled), .button-middle-dark:active:not(:disabled), .button-middle-dark:focus:not(:disabled) {
     background-color: #373737; }
 
 .button-big-primary {
   background-color: #0894ec;
   color: #fff; }
-  .button-big-primary:hover {
+  .button-big-primary:hover:not(:disabled), .button-big-primary:active:not(:disabled), .button-big-primary:focus:not(:disabled) {
     background-color: #0785d3; }
 
 .button-big-danger {
   background-color: #ff0000;
   color: #fff; }
-  .button-big-danger:hover {
+  .button-big-danger:hover:not(:disabled), .button-big-danger:active:not(:disabled), .button-big-danger:focus:not(:disabled) {
     background-color: #e60000; }
 
 .button-big-dark {
   background-color: #444;
   color: #fff; }
-  .button-big-dark:hover {
+  .button-big-dark:hover:not(:disabled), .button-big-dark:active:not(:disabled), .button-big-dark:focus:not(:disabled) {
     background-color: #373737; }
 
 .button-radius-primary {
   background-color: #0894ec;
   color: #fff; }
-  .button-radius-primary:hover {
+  .button-radius-primary:hover:not(:disabled), .button-radius-primary:active:not(:disabled), .button-radius-primary:focus:not(:disabled) {
     background-color: #0785d3; }
 
 .button-radius-danger {
   background-color: #ff0000;
   color: #fff; }
-  .button-radius-danger:hover {
+  .button-radius-danger:hover:not(:disabled), .button-radius-danger:active:not(:disabled), .button-radius-danger:focus:not(:disabled) {
     background-color: #e60000; }
 
 .button-radius-dark {
   background-color: #444;
   color: #fff; }
-  .button-radius-dark:hover {
+  .button-radius-dark:hover:not(:disabled), .button-radius-dark:active:not(:disabled), .button-radius-dark:focus:not(:disabled) {
     background-color: #373737; }
 
 .button-middle-radius-primary {
   background-color: #0894ec;
   color: #fff; }
-  .button-middle-radius-primary:hover {
+  .button-middle-radius-primary:hover:not(:disabled), .button-middle-radius-primary:active:not(:disabled), .button-middle-radius-primary:focus:not(:disabled) {
     background-color: #0785d3; }
 
 .button-middle-radius-danger {
   background-color: #ff0000;
   color: #fff; }
-  .button-middle-radius-danger:hover {
+  .button-middle-radius-danger:hover:not(:disabled), .button-middle-radius-danger:active:not(:disabled), .button-middle-radius-danger:focus:not(:disabled) {
     background-color: #e60000; }
 
 .button-middle-radius-dark {
   background-color: #444;
   color: #fff; }
-  .button-middle-radius-dark:hover {
+  .button-middle-radius-dark:hover:not(:disabled), .button-middle-radius-dark:active:not(:disabled), .button-middle-radius-dark:focus:not(:disabled) {
     background-color: #373737; }
 
 .button-big-radius-primary {
   background-color: #0894ec;
   color: #fff; }
-  .button-big-radius-primary:hover {
+  .button-big-radius-primary:hover:not(:disabled), .button-big-radius-primary:active:not(:disabled), .button-big-radius-primary:focus:not(:disabled) {
     background-color: #0785d3; }
 
 .button-big-radius-danger {
   background-color: #ff0000;
   color: #fff; }
-  .button-big-radius-danger:hover {
+  .button-big-radius-danger:hover:not(:disabled), .button-big-radius-danger:active:not(:disabled), .button-big-radius-danger:focus:not(:disabled) {
     background-color: #e60000; }
 
 .button-big-radius-dark {
   background-color: #444;
   color: #fff; }
-  .button-big-radius-dark:hover {
+  .button-big-radius-dark:hover:not(:disabled), .button-big-radius-dark:active:not(:disabled), .button-big-radius-dark:focus:not(:disabled) {
     background-color: #373737; }
 
 .block-button-primary {
   background-color: #0894ec;
   color: #fff; }
-  .block-button-primary:hover {
+  .block-button-primary:hover:not(:disabled), .block-button-primary:active:not(:disabled), .block-button-primary:focus:not(:disabled) {
     background-color: #0785d3; }
 
 .block-button-danger {
   background-color: #ff0000;
   color: #fff; }
-  .block-button-danger:hover {
+  .block-button-danger:hover:not(:disabled), .block-button-danger:active:not(:disabled), .block-button-danger:focus:not(:disabled) {
     background-color: #e60000; }
 
 .block-button-dark {
   background-color: #444;
   color: #fff; }
-  .block-button-dark:hover {
+  .block-button-dark:hover:not(:disabled), .block-button-dark:active:not(:disabled), .block-button-dark:focus:not(:disabled) {
     background-color: #373737; }
 
 .block-button-middle-primary {
   background-color: #0894ec;
   color: #fff; }
-  .block-button-middle-primary:hover {
+  .block-button-middle-primary:hover:not(:disabled), .block-button-middle-primary:active:not(:disabled), .block-button-middle-primary:focus:not(:disabled) {
     background-color: #0785d3; }
 
 .block-button-middle-danger {
   background-color: #ff0000;
   color: #fff; }
-  .block-button-middle-danger:hover {
+  .block-button-middle-danger:hover:not(:disabled), .block-button-middle-danger:active:not(:disabled), .block-button-middle-danger:focus:not(:disabled) {
     background-color: #e60000; }
 
 .block-button-middle-dark {
   background-color: #444;
   color: #fff; }
-  .block-button-middle-dark:hover {
+  .block-button-middle-dark:hover:not(:disabled), .block-button-middle-dark:active:not(:disabled), .block-button-middle-dark:focus:not(:disabled) {
     background-color: #373737; }
 
 .block-button-big-primary {
   background-color: #0894ec;
   color: #fff; }
-  .block-button-big-primary:hover {
+  .block-button-big-primary:hover:not(:disabled), .block-button-big-primary:active:not(:disabled), .block-button-big-primary:focus:not(:disabled) {
     background-color: #0785d3; }
 
 .block-button-big-danger {
   background-color: #ff0000;
   color: #fff; }
-  .block-button-big-danger:hover {
+  .block-button-big-danger:hover:not(:disabled), .block-button-big-danger:active:not(:disabled), .block-button-big-danger:focus:not(:disabled) {
     background-color: #e60000; }
 
 .block-button-big-dark {
   background-color: #444;
   color: #fff; }
-  .block-button-big-dark:hover {
+  .block-button-big-dark:hover:not(:disabled), .block-button-big-dark:active:not(:disabled), .block-button-big-dark:focus:not(:disabled) {
     background-color: #373737; }
 
 .outline-button-primary {
   background-color: transparent;
   color: #0894ec;
   border: 1px solid #0894ec; }
-  .outline-button-primary:hover {
+  .outline-button-primary:hover:not(:disabled), .outline-button-primary:active:not(:disabled), .outline-button-primary:focus:not(:disabled) {
     background-color: #0785d3;
     color: #fff; }
 
@@ -220,7 +220,7 @@
   background-color: transparent;
   color: #ff0000;
   border: 1px solid #ff0000; }
-  .outline-button-danger:hover {
+  .outline-button-danger:hover:not(:disabled), .outline-button-danger:active:not(:disabled), .outline-button-danger:focus:not(:disabled) {
     background-color: #e60000;
     color: #fff; }
 
@@ -228,7 +228,7 @@
   background-color: transparent;
   color: #444;
   border: 1px solid #444; }
-  .outline-button-dark:hover {
+  .outline-button-dark:hover:not(:disabled), .outline-button-dark:active:not(:disabled), .outline-button-dark:focus:not(:disabled) {
     background-color: #373737;
     color: #fff; }
 
@@ -236,7 +236,7 @@
   background-color: transparent;
   color: #0894ec;
   border: 1px solid #0894ec; }
-  .outline-button-middle-primary:hover {
+  .outline-button-middle-primary:hover:not(:disabled), .outline-button-middle-primary:active:not(:disabled), .outline-button-middle-primary:focus:not(:disabled) {
     background-color: #0785d3;
     color: #fff; }
 
@@ -244,7 +244,7 @@
   background-color: transparent;
   color: #ff0000;
   border: 1px solid #ff0000; }
-  .outline-button-middle-danger:hover {
+  .outline-button-middle-danger:hover:not(:disabled), .outline-button-middle-danger:active:not(:disabled), .outline-button-middle-danger:focus:not(:disabled) {
     background-color: #e60000;
     color: #fff; }
 
@@ -252,7 +252,7 @@
   background-color: transparent;
   color: #444;
   border: 1px solid #444; }
-  .outline-button-middle-dark:hover {
+  .outline-button-middle-dark:hover:not(:disabled), .outline-button-middle-dark:active:not(:disabled), .outline-button-middle-dark:focus:not(:disabled) {
     background-color: #373737;
     color: #fff; }
 
@@ -260,7 +260,7 @@
   background-color: transparent;
   color: #0894ec;
   border: 1px solid #0894ec; }
-  .outline-button-big-primary:hover {
+  .outline-button-big-primary:hover:not(:disabled), .outline-button-big-primary:active:not(:disabled), .outline-button-big-primary:focus:not(:disabled) {
     background-color: #0785d3;
     color: #fff; }
 
@@ -268,7 +268,7 @@
   background-color: transparent;
   color: #ff0000;
   border: 1px solid #ff0000; }
-  .outline-button-big-danger:hover {
+  .outline-button-big-danger:hover:not(:disabled), .outline-button-big-danger:active:not(:disabled), .outline-button-big-danger:focus:not(:disabled) {
     background-color: #e60000;
     color: #fff; }
 
@@ -276,7 +276,7 @@
   background-color: transparent;
   color: #444;
   border: 1px solid #444; }
-  .outline-button-big-dark:hover {
+  .outline-button-big-dark:hover:not(:disabled), .outline-button-big-dark:active:not(:disabled), .outline-button-big-dark:focus:not(:disabled) {
     background-color: #373737;
     color: #fff; }
 
@@ -284,7 +284,7 @@
   background-color: transparent;
   color: #0894ec;
   border: 1px solid #0894ec; }
-  .outline-button-radius-primary:hover {
+  .outline-button-radius-primary:hover:not(:disabled), .outline-button-radius-primary:active:not(:disabled), .outline-button-radius-primary:focus:not(:disabled) {
     background-color: #0785d3;
     color: #fff; }
 
@@ -292,7 +292,7 @@
   background-color: transparent;
   color: #ff0000;
   border: 1px solid #ff0000; }
-  .outline-button-radius-danger:hover {
+  .outline-button-radius-danger:hover:not(:disabled), .outline-button-radius-danger:active:not(:disabled), .outline-button-radius-danger:focus:not(:disabled) {
     background-color: #e60000;
     color: #fff; }
 
@@ -300,7 +300,7 @@
   background-color: transparent;
   color: #444;
   border: 1px solid #444; }
-  .outline-button-radius-dark:hover {
+  .outline-button-radius-dark:hover:not(:disabled), .outline-button-radius-dark:active:not(:disabled), .outline-button-radius-dark:focus:not(:disabled) {
     background-color: #373737;
     color: #fff; }
 
@@ -308,7 +308,7 @@
   background-color: transparent;
   color: #0894ec;
   border: 1px solid #0894ec; }
-  .outline-button-middle-radius-primary:hover {
+  .outline-button-middle-radius-primary:hover:not(:disabled), .outline-button-middle-radius-primary:active:not(:disabled), .outline-button-middle-radius-primary:focus:not(:disabled) {
     background-color: #0785d3;
     color: #fff; }
 
@@ -316,7 +316,7 @@
   background-color: transparent;
   color: #ff0000;
   border: 1px solid #ff0000; }
-  .outline-button-middle-radius-danger:hover {
+  .outline-button-middle-radius-danger:hover:not(:disabled), .outline-button-middle-radius-danger:active:not(:disabled), .outline-button-middle-radius-danger:focus:not(:disabled) {
     background-color: #e60000;
     color: #fff; }
 
@@ -324,7 +324,7 @@
   background-color: transparent;
   color: #444;
   border: 1px solid #444; }
-  .outline-button-middle-radius-dark:hover {
+  .outline-button-middle-radius-dark:hover:not(:disabled), .outline-button-middle-radius-dark:active:not(:disabled), .outline-button-middle-radius-dark:focus:not(:disabled) {
     background-color: #373737;
     color: #fff; }
 
@@ -332,7 +332,7 @@
   background-color: transparent;
   color: #0894ec;
   border: 1px solid #0894ec; }
-  .outline-button-big-radius-primary:hover {
+  .outline-button-big-radius-primary:hover:not(:disabled), .outline-button-big-radius-primary:active:not(:disabled), .outline-button-big-radius-primary:focus:not(:disabled) {
     background-color: #0785d3;
     color: #fff; }
 
@@ -340,7 +340,7 @@
   background-color: transparent;
   color: #ff0000;
   border: 1px solid #ff0000; }
-  .outline-button-big-radius-danger:hover {
+  .outline-button-big-radius-danger:hover:not(:disabled), .outline-button-big-radius-danger:active:not(:disabled), .outline-button-big-radius-danger:focus:not(:disabled) {
     background-color: #e60000;
     color: #fff; }
 
@@ -348,7 +348,7 @@
   background-color: transparent;
   color: #444;
   border: 1px solid #444; }
-  .outline-button-big-radius-dark:hover {
+  .outline-button-big-radius-dark:hover:not(:disabled), .outline-button-big-radius-dark:active:not(:disabled), .outline-button-big-radius-dark:focus:not(:disabled) {
     background-color: #373737;
     color: #fff; }
 
@@ -356,7 +356,7 @@
   background-color: transparent;
   color: #0894ec;
   border: 1px solid #0894ec; }
-  .outline-block-button-primary:hover {
+  .outline-block-button-primary:hover:not(:disabled), .outline-block-button-primary:active:not(:disabled), .outline-block-button-primary:focus:not(:disabled) {
     background-color: #0785d3;
     color: #fff; }
 
@@ -364,7 +364,7 @@
   background-color: transparent;
   color: #ff0000;
   border: 1px solid #ff0000; }
-  .outline-block-button-danger:hover {
+  .outline-block-button-danger:hover:not(:disabled), .outline-block-button-danger:active:not(:disabled), .outline-block-button-danger:focus:not(:disabled) {
     background-color: #e60000;
     color: #fff; }
 
@@ -372,7 +372,7 @@
   background-color: transparent;
   color: #444;
   border: 1px solid #444; }
-  .outline-block-button-dark:hover {
+  .outline-block-button-dark:hover:not(:disabled), .outline-block-button-dark:active:not(:disabled), .outline-block-button-dark:focus:not(:disabled) {
     background-color: #373737;
     color: #fff; }
 
@@ -380,7 +380,7 @@
   background-color: transparent;
   color: #0894ec;
   border: 1px solid #0894ec; }
-  .outline-block-button-middle-primary:hover {
+  .outline-block-button-middle-primary:hover:not(:disabled), .outline-block-button-middle-primary:active:not(:disabled), .outline-block-button-middle-primary:focus:not(:disabled) {
     background-color: #0785d3;
     color: #fff; }
 
@@ -388,7 +388,7 @@
   background-color: transparent;
   color: #ff0000;
   border: 1px solid #ff0000; }
-  .outline-block-button-middle-danger:hover {
+  .outline-block-button-middle-danger:hover:not(:disabled), .outline-block-button-middle-danger:active:not(:disabled), .outline-block-button-middle-danger:focus:not(:disabled) {
     background-color: #e60000;
     color: #fff; }
 
@@ -396,7 +396,7 @@
   background-color: transparent;
   color: #444;
   border: 1px solid #444; }
-  .outline-block-button-middle-dark:hover {
+  .outline-block-button-middle-dark:hover:not(:disabled), .outline-block-button-middle-dark:active:not(:disabled), .outline-block-button-middle-dark:focus:not(:disabled) {
     background-color: #373737;
     color: #fff; }
 
@@ -404,7 +404,7 @@
   background-color: transparent;
   color: #0894ec;
   border: 1px solid #0894ec; }
-  .outline-block-button-big-primary:hover {
+  .outline-block-button-big-primary:hover:not(:disabled), .outline-block-button-big-primary:active:not(:disabled), .outline-block-button-big-primary:focus:not(:disabled) {
     background-color: #0785d3;
     color: #fff; }
 
@@ -412,7 +412,7 @@
   background-color: transparent;
   color: #ff0000;
   border: 1px solid #ff0000; }
-  .outline-block-button-big-danger:hover {
+  .outline-block-button-big-danger:hover:not(:disabled), .outline-block-button-big-danger:active:not(:disabled), .outline-block-button-big-danger:focus:not(:disabled) {
     background-color: #e60000;
     color: #fff; }
 
@@ -420,7 +420,7 @@
   background-color: transparent;
   color: #444;
   border: 1px solid #444; }
-  .outline-block-button-big-dark:hover {
+  .outline-block-button-big-dark:hover:not(:disabled), .outline-block-button-big-dark:active:not(:disabled), .outline-block-button-big-dark:focus:not(:disabled) {
     background-color: #373737;
     color: #fff; }
 
