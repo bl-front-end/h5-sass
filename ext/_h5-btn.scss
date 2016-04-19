@@ -194,7 +194,7 @@ $outline-button-extends: (
 		}
 
 		$base-color-hover:    darken(nth($button-extend, 1), 5%);
-		&:hover:not(:disabled),&:active:not(:disabled),&:focus:not(:disabled){
+		&:active:not(:disabled){
 			background-color: $base-color-hover;
 		}
 	}
@@ -242,7 +242,7 @@ $outline-button-extends: (
 		}
 
 		$base-color-hover:    darken(nth($button-extend, 1), 5%);
-		&:hover:not(:disabled),&:active:not(:disabled),&:focus:not(:disabled){
+		&:active:not(:disabled){
 			background-color: $base-color-hover;
 		}
 	}
@@ -291,7 +291,7 @@ $outline-button-extends: (
 		}
 
 		$base-color-hover:    darken(nth($button-extend, 2), 5%);
-		&:hover:not(:disabled),&:active:not(:disabled),&:focus:not(:disabled){
+		&:active:not(:disabled){
 			background-color: $base-color-hover;
 			color: #fff;
 		}
@@ -341,7 +341,7 @@ $outline-button-extends: (
 		}
 
 		$base-color-hover:    darken(nth($button-extend, 2), 5%);
-		&:hover:not(:disabled),&:active:not(:disabled),&:focus:not(:disabled){
+		&:active:not(:disabled){
 			background-color: $base-color-hover;
 			color: #fff;
 		}
