@@ -46,3 +46,39 @@ or
 ```
 
 **按钮大小定义了三种small、middle、big，按钮颜色定义了primary、danger、dark三种颜色**
+
+#h5-input
+
+_h5-input.scss的使用方法
+
+``` sass
+ .input{
+ 	@extend %input;
+ }
+ 
+ or
+ 
+ .radius-input{
+ 	@extend %radius-input;
+ }
+ 
+ or
+ 
+ .middle-input {
+ 	@extend %middle-input;
+ }
+ 
+ or
+ 
+ .middle-radius-input {
+ 	@extend %middle-radius-input;
+ }
+ 
+ or
+ // 搜索框左边搜索图标，需与input框同级，父元素是相对定位。
+ .search-input .label-icon {
+ 	@extend %label-icon;
+ }
+```
+
+**输入框定义了高度是1.75rem和2.25rem两种高度，有圆角和没有圆角**
