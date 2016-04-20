@@ -79,6 +79,13 @@ _h5-input.scss的使用方法
  .search-input .label-icon {
  	@extend %label-icon;
  }
+  or
+ // 设置光标颜色
+ .middle-radius-input {
+ 	@extend %middle-radius-input;
+ 	/*@include cursor(#000, #ff0000); 第一个参数是设置文字颜色，第二个参数设置光标颜色 */
+ 	@extend %cursor-danger; //extend方式
+ }
 ```
 
-**输入框定义了高度是1.75rem和2.25rem两种高度，有圆角和没有圆角**
+**输入框定义了高度是1.75rem和2.25rem两种高度，有圆角和没有圆角，设置光标颜色从$cursor-colors增加，第一个参数是extend的名称，第二个是光标颜色（接受一个参数）**
