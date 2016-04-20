@@ -2,6 +2,7 @@
 //----------------------------------
 @import "mixins.scss";
 @import "variables";
+@import "bourbon/bourbon";
 
 // 定义样式，顺序依次是输入框高度、圆角大小, 值可以以后继续添加，可以是已经声明了的， 也可以自定义值。
 $input-extends: (
@@ -9,20 +10,19 @@ $input-extends: (
 				radius-input: 1.75rem small,
 				middle-input: 2.25rem 0,
 				middle-radius-input: 2.25rem middle);
+// 定义输入框光标和字的颜色，第一个参数是extend的名称，第二个是光标颜色
+$cursor-colors: (
+					cursor-primary:		$primary,
+					cursor-danger:		$danger,
+					cursor-dark:		$dark,
+					cursor-my:			#000
+				);
 
-@each $name, $input-extend in $input-extends {
-	%#{$name} {
-		@extend %default-input;
-		height: nth($input-extend, 1);
-		@if type-of(nth($input-extend, 2)) == number {
-			-webkit-border-radius: nth($input-extend, 2);
-			-moz-border-radius: nth($input-extend, 2);
-			border-radius: nth($input-extend, 2);
-		} @else {
-			@extend %border-radius-#{nth($input-extend, 2)};
-		}
-		
-	}
+/* 第一个参数是设置文字颜色，第二个参数设置光标颜色 */
+@mixin cursor($word-color: #ff0000, $cursor-color: #ff0000) {
+	color: $cursor-color;
+	text-shadow: 0px 0px 0px $word-color;
+	-webkit-text-fill-color: transparent;
 }
 
  // 基础输入框样式 
@@ -30,8 +30,9 @@ $input-extends: (
 	display: block;
     width: 100%;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0 0 0 0.5rem;
+    padding: 0 .5rem;
     margin: 0;
     font-family: inherit;
     font-size: 0.875rem;
@@ -43,12 +44,17 @@ $input-extends: (
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+    line-height: inherit;
+    vertical-align: middle;
     @extend %border-radius-middle;
     &::-webkit-input-placeholder {
 	  color: #999;
 	  opacity: 1;
+	  text-shadow: none;
+	  -webkit-text-fill-color: initial;
 	}
  }
+
 // 搜索框左边搜索图标
 %label-icon{
 	position: absolute;
@@ -67,6 +73,28 @@ $input-extends: (
  		padding-left: 2rem;
  	}
  }
+
+ @each $name, $cursor-color in $cursor-colors {
+	%#{$name} {
+		color: nth($cursor-color, 1);
+		text-shadow: 0px 0px 0px nth($cursor-color, 1);
+		-webkit-text-fill-color: transparent;
+	}
+}
+@each $name, $input-extend in $input-extends {
+	%#{$name} {
+		@extend %default-input;
+		height: nth($input-extend, 1);
+		@if type-of(nth($input-extend, 2)) == number {
+			-webkit-border-radius: nth($input-extend, 2);
+			-moz-border-radius: nth($input-extend, 2);
+			border-radius: nth($input-extend, 2);
+		} @else {
+			@extend %border-radius-#{nth($input-extend, 2)};
+		}
+		
+	}
+}
  .input{
  	@extend %input;
  }
@@ -78,6 +106,8 @@ $input-extends: (
  }
  .middle-radius-input {
  	@extend %middle-radius-input;
+ 	/*@include cursor(#000, #ff0000); 第一个参数是设置文字颜色，第二个参数设置光标颜色 */
+ 	@extend %cursor-danger;
  }
  .search-input .label-icon {
  	@extend %label-icon;
