@@ -1,8 +1,7 @@
 // input class
 //----------------------------------
-@import "mixins.scss";
+@import "compass";
 @import "variables";
-@import "bourbon/bourbon";
 
 // 定义样式，顺序依次是输入框高度、圆角大小, 值可以以后继续添加，可以是已经声明了的， 也可以自定义值。
 $input-extends: (
